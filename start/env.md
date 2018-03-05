@@ -20,6 +20,12 @@ npm install webpack-cli
 
 默认情况下，webpack 使用 `src/index.js` 作为入口文件，默认把 `dist` 作为输出目录。
 
+新建 `index.js`
+
+```js
+alert('hello world')
+```
+
 ## npm scripts
 
 为了避免记忆命令，可以把 script 写到 `package.json` 里
@@ -53,12 +59,12 @@ npm install webpack-cli
 
 ```js
 ├── dist
-│   └── main.js
+│   └── main.js
 ├── index.html
 ├── package.json
 └── src
     └── index.js
 ```
 
-
+打开 `index.html` 就能看到我们的页面。
 
