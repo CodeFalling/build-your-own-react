@@ -24,11 +24,7 @@ React.createElement("div",null,
     name);
 ```
 
-["https://zhuanlan.zhihu.com/p/28257907/15011579204982.html"&gt;ps: 可以通过](https://zhuanlan.zhihu.com/p/28257907/%3C/i)[Babel REPL Online](http://link.zhihu.com/?target=https%3A//babeljs.io/repl/%23%3Fpresets%3Dreact)很方便的看到 JSX 翻译的结果，这对于我们的开发有帮助
+[可以通过](https://zhuanlan.zhihu.com/p/28257907/</i)[Babel REPL Online](http://link.zhihu.com/?target=https%3A//babeljs.io/repl/%23%3Fpresets%3Dreact) 方便地看到 JSX 翻译的结果，这对于我们的开发很有帮助
 
 而 React 只需提供 React.createElement 这个函数即可，所以我们要做的就是在完成 React-tiny 的 createElement 函数后，令 React.createElement 等于它。
-
-
-
-
 
