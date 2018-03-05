@@ -3,6 +3,6 @@
     "gitbook-cli": "^2.3.2"
   },
   "scripts": {
-    "build": "gitbook build && mv _book ./docs"
+    "build": "gitbook build && rm -rf ./docs && mv _book/ docs"
   }
 }
