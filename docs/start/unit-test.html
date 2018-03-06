@@ -1,0 +1,319 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>单元测试 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="simple-render.html" />
+    
+    
+    <link rel="prev" href="basic.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kai-shi.md">
+            
+                <span>
+            
+                    
+                    开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="unit-test.html">
+            
+                <a href="unit-test.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="simple-render.html">
+            
+                <a href="simple-render.html">
+            
+                    
+                    简单渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >单元测试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5355;&#x5143;&#x6D4B;&#x8BD5;">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</h1>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528; jasmine &#x6765;&#x7F16;&#x5199;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#xFF0C;&#x5B83;&#x80FD;&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#xFF0C;&#x5E76;&#x4E14;&#x76F4;&#x63A5;&#x5728; HTML &#x4E0A;&#x63D0;&#x4F9B;&#x6D4B;&#x8BD5;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p><img src="../imgs/2018-03-05-jasmine.jpg" alt="jasmine"></p>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5355;&#x5143;&#x6D4B;&#x8BD5;">&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5355;&#x5143;&#x6D4B;&#x8BD5;</h2>
+<p>&#x7531;&#x4E8E;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x662F;&#x6BCF;&#x6B21;&#x6D4B;&#x8BD5;&#x65F6;&#x90FD;&#x9700;&#x8981;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5E76;&#x4E14;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;&#x4E0A;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x628A;&#x4ED6;&#x653E;&#x5728;&#x516C;&#x5171;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x505A;&#x3002;&#x6709;&#x4E9B;&#x540C;&#x5B66;&#x5BF9;&#x4E8E;&#x524D;&#x7AEF;&#x6D4B;&#x8BD5;&#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x964C;&#x751F;&#xFF0C;&#x8BA4;&#x4E3A;&#x524D;&#x7AEF;&#x6CA1;&#x5FC5;&#x8981;&#x5199;&#x6D4B;&#x8BD5;&#x6216;&#x8005;&#x53EA;&#x6709;&#x975E;&#x5E38;&#x4E25;&#x8083;&#x7684;&#x9879;&#x76EE;&#x624D;&#x5199;&#x6D4B;&#x8BD5;&#x3002;&#x5176;&#x5B9E;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x6574;&#x4F53;&#x7684;&#x9700;&#x6C42;&#x975E;&#x5E38;&#x7A33;&#x5B9A;&#xFF0C;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x9664;&#x4E86;&#x662F;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x8D28;&#x91CF;&#x5916;&#xFF0C;&#x4E5F;&#x662F;&#x6781;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x907F;&#x514D;&#x4E86;&#x91CD;&#x590D;&#x52B3;&#x52A8;&#x3002;&#x9488;&#x5BF9;&#x4E8E; react-tiny &#x7684;&#x6D4B;&#x8BD5;&#x5C31;&#x662F;<strong>&#x4E3A;&#x4E86;&#x66FF;&#x4EE3;&#x6211;&#x4EEC;&#x7684;&#x624B;&#x5DE5;&#x9A8C;&#x8BC1;</strong>&#xFF0C;&#x4F8B;&#x5982;&#x8BF4;&#x70B9;&#x51FB;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#x7136;&#x540E;&#x67E5;&#x770B;&#x5176;&#x6807;&#x9898;&#x662F;&#x5426;&#x53D8;&#x5316;&#x3002;</p>
+<p>&#x516C;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x7ED9;&#x4ED6;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A; append &#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5; append &#x5230;&#x6D4B;&#x8BD5;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x5176;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#xFF08;&#x8FD9;&#x5F80;&#x5F80;&#x662F;&#x6D4B;&#x8BD5;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createContainer</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">const</span> container = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+    container.setAttribute(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;test-container-&apos;</span> + name);
+    container.append = (con = <span class="hljs-built_in">document</span>.body) =&gt; {
+        con.appendChild(container);
+        <span class="hljs-keyword">return</span> container.childNodes[<span class="hljs-number">0</span>];
+    };
+    <span class="hljs-keyword">return</span> container;
+}
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;</p>
+<pre><code class="lang-js">describe(<span class="hljs-string">&apos;Render&apos;</span>, () =&gt; {
+    it(<span class="hljs-string">&apos;&lt;div&gt;test&lt;/div&gt; should be render as &lt;div&gt;test&lt;/div&gt;&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">const</span> con = createContainer(<span class="hljs-string">&apos;render-simple&apos;</span>);
+        React.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>, con);
+
+        <span class="hljs-comment">// &#x83B7;&#x53D6; append &#x8FDB;&#x53BB;&#x7684;&#x5143;&#x7D20;</span>
+        <span class="hljs-keyword">const</span> target = con.append();
+
+        expect(target.nodeName.toUpperCase()).toEqual(<span class="hljs-string">&apos;DIV&apos;</span>);
+        expect(target.innerText).toEqual(<span class="hljs-string">&apos;test&apos;</span>);
+    });
+});
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x9762;&#x7684;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#x4E3A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; <code>Render</code> &#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x8981;&#x80FD;&#x591F;&#x6E32;&#x67D3; <code>&lt;div&gt;test&lt;/div&gt;</code>&#x3002;&#x5728;&#x5B8C;&#x6210;&#x529F;&#x80FD;&#x540E;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x771F;&#x7684;&#x6E32;&#x67D3;&#x51FA;&#x6765;&#x4E00;&#x4E2A; <code>div</code> &#x6807;&#x7B7E;&#xFF0C;&#x6807;&#x7B7E;&#x7684;&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x662F;&#x5426;&#x771F;&#x4E3A; <code>test</code>&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x6848;&#x4F8B;&#xFF0C;&#x4E00;&#x65E6;&#x5199;&#x597D;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x7CBE;&#x786E;&#x3001;&#x9AD8;&#x6548;&#x5730;&#x68C0;&#x6D4B;&#x529F;&#x80FD;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF0C;&#x6BD4;&#x8089;&#x773C;&#x66F4;&#x4E3A;&#x53EF;&#x9760;&#x3002;</p>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x7684;&#x529F;&#x80FD;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x8D8A;&#x6765;&#x8D8A;&#x590D;&#x6742;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x4E00;&#x904D;&#x4E00;&#x904D;&#x7684;&#x53BB;&#x91CD;&#x65B0;&#x56DE;&#x5F52;&#x6BCF;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x4E00;&#x65E6;&#x5199;&#x5B8C;&#x5C31;&#x4F1A;&#x5FE0;&#x5B9E;&#x7684;&#x6267;&#x884C;&#x68C0;&#x67E5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basic.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="simple-render.html" class="navigation navigation-next " aria-label="Next page: 简单渲染">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"单元测试","level":"1.2.2","depth":2,"next":{"title":"简单渲染","level":"1.2.3","depth":2,"path":"start/simple-render.md","ref":"start/simple-render.md","articles":[]},"previous":{"title":"基本概念","level":"1.2.1","depth":2,"path":"start/basic.md","ref":"start/basic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"start/unit-test.md","mtime":"2018-03-06T06:55:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-06T07:09:25.871Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
